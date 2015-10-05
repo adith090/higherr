@@ -20,6 +20,15 @@ $(document).ready(function () {
 			asdVisCheckbox.niftyCheck('toggleOff')
 		}
 	});
+
+	
+	// MASONRY (PINTEREST CARD)
+	// =================================================================
+	// Init
+	// =================================================================
+	$('.grid').masonry({
+	  	itemSelector: '.grid-item'
+	})
 });
 
 
