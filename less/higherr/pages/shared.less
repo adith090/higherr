@@ -2,11 +2,22 @@
 
 #header-expansion {
 	position: absolute;
+	z-index: 100;
 	width: 100%;
 	height: 150px;
-	background: @mainnav-bg;
+	background: fade(@mainnav-bg, 90%);
 }
 
 #container #content-container, #container #footer {
 	padding-left: 0!important;
+}
+
+.grid {
+	margin: auto;
+	
+	.grid-item {
+		width: 240px;
+		height: 300px;
+		margin-bottom: 20px;
+	}
 }

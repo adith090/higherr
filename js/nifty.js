@@ -1148,19 +1148,19 @@ Both of the above methods will produce the same results.
 	var asideMethods = {
 		'toggleHideShow' : function(){
 			nifty.container.toggleClass('aside-in');
-			nifty.window.trigger('resize');
+			//nifty.window.trigger('resize');
 			if(nifty.container.hasClass('aside-in')){
 				toggleNav();
 			}
 		},
 		'show' : function(){
 			nifty.container.addClass('aside-in');
-			nifty.window.trigger('resize');
+			//nifty.window.trigger('resize');
 			toggleNav();
 		},
 		'hide' : function(){
 			nifty.container.removeClass('aside-in');
-			nifty.window.trigger('resize');
+			//nifty.window.trigger('resize');
 		},
 		'toggleAlign' : function(){
 			nifty.container.toggleClass('aside-left');
