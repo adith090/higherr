@@ -1,0 +1,20 @@
+{
+  "name": "higherr",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zuyetawarmatik/higherr",
+  "authors": [
+    "Bui Phuc Duyet <francesc.zuyet@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "~2.5.3",
+    "masonry": "~3.3.2"
+  }
+}

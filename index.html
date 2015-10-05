@@ -11,7 +11,7 @@
 	<!--=================================================-->
 
 	<!--Open Sans Font [ OPTIONAL ] -->
- 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
 
 
 	<!--Bootstrap Stylesheet [ REQUIRED ]-->
@@ -19,9 +19,9 @@
 
 
 	<!--Nifty Stylesheet [ REQUIRED ]-->
-	<link href="css/nifty.min.css" rel="stylesheet">
+	<link href="less/nifty.less" rel="stylesheet/less" type="text/css">
 
-	
+
 	<!--Font Awesome [ OPTIONAL ]-->
 	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
@@ -34,6 +34,7 @@
 	<link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
 
 
+	<link href="less/higherr/pages/shared.less" rel="stylesheet/less" type="text/css">
 
 
 	<!--SCRIPT-->
@@ -42,11 +43,14 @@
 	<!--Page Load Progress Bar [ OPTIONAL ]-->
 	<link href="plugins/pace/pace.min.css" rel="stylesheet">
 	<script src="plugins/pace/pace.min.js"></script>
+
+	<script src="bower_components/less/dist/less.min.js"></script>
+
 </head>
 
 <body>
 	<div id="container" class="effect mainnav-sm">
-		
+
 		<!--NAVBAR-->
 		<!--===================================================-->
 		<header id="navbar">
@@ -70,27 +74,26 @@
 				<!--================================-->
 				<div class="navbar-content clearfix">
 					<ul class="nav navbar-top-links pull-left">
-                        <li>
-                            <a href="#">Geography 6A</a>
-                        </li>
-                        <li>
-                            <a href="#">Astronomy</a>
-                        </li>
-                        <li>
-                            <a href="#">Math Basic</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-angle-down"></i></a>
-                        </li>
+						<li>
+							<a href="#">Geography 6A</a>
+						</li>
+						<li>
+							<a href="#">Astronomy</a>
+						</li>
+						<li>
+							<a href="#">Math Basic</a>
+						</li>
+						<li>
+							<a href="#header-expansion" data-toggle="collapse"><i class="fa fa-angle-down"></i></a>
+						</li>
 					</ul>
 					<ul class="nav navbar-top-links pull-right">
-                        
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-puzzle-piece text-mint"></i>
-                            </a>
-                        </li>
-                        
+						<li>
+							<a href="#">
+								<i class="fa fa-puzzle-piece text-mint"></i>
+							</a>
+						</li>
+
 						<!--User dropdown-->
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<li id="dropdown-user" class="dropdown">
@@ -144,22 +147,21 @@
 						</li>
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<!--End user dropdown-->
-						
+
 						<!--Sidebar toggle-->
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li id="toggle-aside">
-                            <a href="#">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li id="toggle-aside">
+							<a href="#">
+								<i class="fa fa-bars"></i>
+							</a>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<!--End user dropdown-->
 					</ul>
-                    
-                    
+
 				</div>
 				<!--================================-->
-				<!--End Navbar-->
+				<!--End Navbar-->                
 
 			</div>
 		</header>
@@ -171,11 +173,17 @@
 			<!--CONTENT CONTAINER-->
 			<!--===================================================-->
 			<div id="content-container">
-                
+
+				<!--Header expansion-->
+				<!--===================================================-->
+				<div id="header-expansion" class="collapse">
+
+				</div>
+
 				<!--Page content-->
 				<!--===================================================-->
 				<div id="page-content">
-					
+
 				</div>
 				<!--===================================================-->
 				<!--End page content-->
@@ -191,7 +199,7 @@
 				<div id="aside">
 					<div class="nano">
 						<div class="nano-content">
-							
+
 							<!--Nav tabs-->
 							<!--================================-->
 							<ul class="nav nav-tabs nav-justified">
@@ -484,9 +492,11 @@
 	<!--===================================================-->
 	<!-- END OF CONTAINER -->
 
-	
+
 	<!--JAVASCRIPT-->
 	<!--=================================================-->
+
+
 
 	<!--jQuery [ REQUIRED ]-->
 	<script src="js/jquery-2.1.1.min.js"></script>
@@ -499,7 +509,7 @@
 	<!--Fast Click [ OPTIONAL ]-->
 	<script src="plugins/fast-click/fastclick.min.js"></script>
 
-	
+
 	<!--Nifty Admin [ RECOMMENDED ]-->
 	<script src="js/nifty.min.js"></script>
 
